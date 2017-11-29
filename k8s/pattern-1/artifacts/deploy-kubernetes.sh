@@ -57,7 +57,7 @@ kubectl create -f rdbms/rdbms-persistent-volume-claim.yaml
 kubectl create -f rdbms/rdbms-service.yaml
 kubectl create -f rdbms/rdbms-deployment.yaml
 
-sleep 60s
+sleep 120s
 
 echo 'deploying services and volume claims ...'
 kubectl create -f apim-analytics/wso2apim-analytics-service.yaml
@@ -71,9 +71,9 @@ kubectl create -f apim/wso2apim-mgt-volume-claim.yaml
 # analytics
 echo 'deploying apim analytics 1 ...'
 kubectl create -f apim-analytics/wso2apim-analytics-1-deployment.yaml
+sleep 10s
 echo 'deploying apim analytics 2 ...'
 kubectl create -f apim-analytics/wso2apim-analytics-2-deployment.yaml
-
 sleep 240s
 
 # apim

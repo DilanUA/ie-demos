@@ -27,7 +27,7 @@ spec:
   persistentVolumeReclaimPolicy: Recycle
   nfs:
     # FIXME: use the right IP
-    server: 10.11.244.66
+    server: 10.11.248.255
     path: "/exports/pattern-1/apim"
 ---
 apiVersion: v1
